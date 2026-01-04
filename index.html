@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>B.O.P Lounge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bop-blue: #2B3890;
+        --bop-red: #E51D37;
+        --bop-white: #FFFFFF;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #020617;
+        color: #f8fafc;
+        overflow-x: hidden;
+        touch-action: manipulation;
+      }
+      .font-bungee {
+        font-family: 'Bungee', cursive;
+      }
+      .neon-text-red {
+        text-shadow: 0 0 10px rgba(229, 29, 55, 0.8), 0 0 20px rgba(229, 29, 55, 0.4);
+      }
+      .neon-text-blue {
+        text-shadow: 0 0 10px rgba(43, 56, 144, 0.8), 0 0 20px rgba(43, 56, 144, 0.4);
+      }
+      .bop-gradient {
+        background: linear-gradient(135deg, var(--bop-blue) 0%, #1e1b4b 100%);
+      }
+      .drunk-mode {
+        animation: wavy 4s ease-in-out infinite;
+        filter: blur(0.4px) contrast(1.1);
+      }
+      .tipsy-mode {
+        animation: shake 2.5s ease-in-out infinite;
+        filter: contrast(1.05);
+      }
+      @keyframes wavy {
+        0%, 100% { transform: skew(0deg, 0deg) rotate(0deg); }
+        25% { transform: skew(1.5deg, 0.8deg) rotate(0.3deg); }
+        50% { transform: skew(-0.8deg, -0.8deg) rotate(-0.2deg); }
+        75% { transform: skew(0.8deg, 1.5deg) rotate(0.2deg); }
+      }
+      @keyframes shake {
+        0%, 100% { transform: translate(0, 0) rotate(0deg); }
+        20% { transform: translate(1px, 0.5px) rotate(0.1deg); }
+        40% { transform: translate(-0.5px, -1px) rotate(-0.1deg); }
+        60% { transform: translate(0.5px, 0.5px) rotate(0.05deg); }
+        80% { transform: translate(-1px, -0.5px) rotate(-0.05deg); }
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-10px) rotate(2deg); }
+      }
+      .float-animation {
+        animation: float 3s ease-in-out infinite;
+      }
+      .animate-spin-slow {
+        animation: spin 8s linear infinite;
+      }
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      /* Prevent accidental zooming on mobile games */
+      button {
+        touch-action: manipulation;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
