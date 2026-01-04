@@ -279,7 +279,7 @@ const WingFlip: React.FC<WingFlipProps> = ({ playerName }) => {
 
       <div className="bg-blue-900/10 p-4 rounded-3xl border border-blue-900/20 text-center">
         <p className="text-[9px] text-blue-500 font-black uppercase tracking-[0.3em]">
-          Catch 50 wings for a special B.O.P discount!
+          Catch 50 wings for a special B.O.P sauce!
         </p>
       </div>
 

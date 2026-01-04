@@ -1,0 +1,19 @@
+
+{
+  "name": "B.O.P - Bartenders of Pony",
+  "short_name": "B.O.P",
+  "description": "Interactive waiting lounge for Bartenders of Pony.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#020617",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/938/938063.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
