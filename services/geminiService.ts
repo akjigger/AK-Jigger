@@ -8,7 +8,7 @@ export const getBoilermakerRecommendation = async (userMood: string) => {
   const response = await ai.models.generateContent({
     model: 'gemini-3-flash-preview',
     contents: `Suggest a perfect Boilermaker (Beer + Whiskey shot pairing) for someone feeling "${userMood}". 
-    The bar is named B.O.P (Bartender of Pony). Give a creative name for the combo, explain why they match, and describe the flavor profile.`,
+    The bar is named B.O.P (Bartenders of Pony). Give a creative name for the combo, explain why they match, and describe the flavor profile.`,
     config: {
       responseMimeType: "application/json",
       responseSchema: {
@@ -30,7 +30,7 @@ export const getBoilermakerRecommendation = async (userMood: string) => {
 export const getChickenWisdom = async (question: string) => {
   const response = await ai.models.generateContent({
     model: 'gemini-3-flash-preview',
-    contents: `You are "Chicken Sensei", the wise mascot of B.O.P (Bartender of Pony) bar. 
+    contents: `You are "Chicken Sensei", the wise mascot of B.O.P (Bartenders of Pony) bar. 
     A customer is waiting for a table and asks: "${question}". 
     Provide a short, funny, and slightly philosophical answer using fried chicken or beer metaphors.`,
     config: {
@@ -43,7 +43,7 @@ export const getChickenWisdom = async (question: string) => {
 export const getCocktailIdentity = async (answers: string[]) => {
   const response = await ai.models.generateContent({
     model: 'gemini-3-flash-preview',
-    contents: `Based on these personality answers: [${answers.join(", ")}], determine which B.O.P (Bartender of Pony) Signature Cocktail matches the user's soul. 
+    contents: `Based on these personality answers: [${answers.join(", ")}], determine which B.O.P (Bartenders of Pony) Signature Cocktail matches the user's soul. 
     Options: 'Iced SoMaek', 'Cheng & Tonic', 'Honey Maksky Sour', 'Perilla Smash', 'Bokbunja POP', 'Hallabong Bellini', 'Banana Makgeoli Colada', 'Ice Dalgona Coffee', 'Buldak Penicillin', 'K-Town Manhattan', 'BOP Martini (Filthy Martini)', 'Honey Butter Godfather'.
     Provide a witty description of why they are this cocktail, their 'drinking personality', and a 'spirit animal' that matches the drink's vibe.`,
     config: {

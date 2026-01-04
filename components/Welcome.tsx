@@ -26,7 +26,7 @@ const Welcome: React.FC<WelcomeProps> = ({ onStart }) => {
           B.O.P
         </h2>
         <div className="flex items-center justify-center gap-3 text-[#E51D37] font-bold text-[10px] tracking-[0.2em] uppercase">
-          <span>BARTENDER</span>
+          <span>BARTENDERS</span>
           <span className="text-white opacity-20">•</span>
           <span>OF</span>
           <span className="text-white opacity-20">•</span>
